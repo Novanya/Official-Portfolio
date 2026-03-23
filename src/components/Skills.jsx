@@ -33,6 +33,15 @@ export default function Skills() {
         { name: "WordPress", pct: 75 },
       ],
     },
+    {
+      category: "Python Extras",
+      skills: [
+        { name: "Web Scraping", pct: 85 },
+        { name: "Automation", pct: 70 },
+        { name: "GUI Development", pct: 85 },
+        { name: "Data Analysis", pct: 65 },
+      ],
+    },
   ];
 
   const techChips = [
@@ -50,7 +59,12 @@ export default function Skills() {
     "Git",
     "SQL",
     "WordPress",
-    "GCP",
+    "Selenium",
+    "BeautifulSoup",
+    "PyAutoGUI",
+    "Pandas",
+    "Matplotlib",
+    "Requests",
   ];
 
   return (
