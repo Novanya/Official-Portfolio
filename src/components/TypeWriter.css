@@ -1,0 +1,16 @@
+.typewriter {
+  color: #f472b6;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  border-right: 2px solid #f472b6;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { border-color: #f472b6; }
+  25%, 75% { border-color: transparent; }
+}

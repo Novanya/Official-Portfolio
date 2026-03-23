@@ -1,0 +1,128 @@
+.timeline-bg {
+  background: var(--bg2);
+  padding: 6rem clamp(1.5rem, 4vw, 3rem);
+}
+
+.s-label {
+  font-family: var(--ff-m);
+  font-size: 0.7rem;
+  color: var(--pink);
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.s-title {
+  font-family: var(--ff-d);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 3.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.s-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 55%;
+  height: 3px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--purple), var(--pink), transparent);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(180deg, var(--purple2), var(--pink), transparent);
+}
+
+.t-item {
+  position: relative;
+  padding-bottom: 2.8rem;
+}
+
+.t-item:last-child {
+  padding-bottom: 0;
+}
+
+.t-dot {
+  position: absolute;
+  left: -2.5rem;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--purple2), var(--pink));
+  box-shadow: 0 0 14px rgba(168,85,247,0.5);
+  transform: translateX(-6.5px);
+}
+
+.t-dot::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid rgba(168,85,247,0.25);
+}
+
+.t-period {
+  font-family: var(--ff-m);
+  font-size: 0.68rem;
+  color: var(--pink);
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+}
+
+.t-role {
+  font-family: var(--ff-d);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.t-org {
+  font-size: 0.88rem;
+  color: var(--purple);
+  font-weight: 500;
+  margin-bottom: 0.65rem;
+}
+
+.t-desc {
+  font-size: 0.88rem;
+  color: #9d8cb0;
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 620px;
+  margin-bottom: 0.5rem;
+}
+
+.t-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.t-badge {
+  font-family: var(--ff-m);
+  font-size: 0.63rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 6px;
+  background: rgba(168,85,247,0.08);
+  border: 1px solid rgba(168,85,247,0.18);
+  color: var(--muted);
+}

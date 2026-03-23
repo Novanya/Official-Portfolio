@@ -1,0 +1,52 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0d0a14;
+  --bg2: #120d1e;
+  --bg3: #1a1028;
+  --purple: #a855f7;
+  --purple2: #7c3aed;
+  --pink: #ec4899;
+  --pink2: #f472b6;
+  --rose: #fb7185;
+  --text: #f1e8ff;
+  --muted: #9d8cb0;
+  --border: rgba(168,85,247,0.18);
+  --ff-d: 'Playfair Display', Georgia, serif;
+  --ff-b: 'DM Sans', sans-serif;
+  --ff-m: 'Fira Code', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+#root {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ff-b);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap');
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--purple), var(--pink));
+  border-radius: 4px;
+}

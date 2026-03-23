@@ -1,0 +1,7 @@
+.timeline { min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:6rem 2rem; }
+.section-title { font-family:'Playfair Display', serif; font-size:2.5rem; font-weight:700; margin-bottom:3rem; text-align:center; }
+.timeline-list { display:flex; flex-direction:column; gap:2rem; max-width:800px; width:100%; }
+.timeline-item { padding:1.8rem 2rem; border-radius:16px; background:rgba(255,255,255,0.05); border:1px solid rgba(244,114,182,0.15); }
+.timeline-item h3 { font-family:'Fira Code', monospace; font-size:1rem; color:#f472b6; margin-bottom:0.3rem; }
+.timeline-item span { font-family:'Fira Code', monospace; font-size:0.72rem; color:#9d8cb0; margin-bottom:0.6rem; display:block; }
+.timeline-item p { font-family:'Fira Code', monospace; font-size:0.85rem; color:#c4b3d8; line-height:1.6; }

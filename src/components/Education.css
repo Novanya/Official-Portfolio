@@ -1,0 +1,9 @@
+.education { min-height:50vh; padding:6rem 2rem; background:#0f0c20; color:#c4b3d8; text-align:center; }
+.education h2 { font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:3rem; color:#f472b6; }
+.education-list { display:flex; flex-direction:column; gap:2rem; max-width:700px; margin:0 auto; }
+.education-card { background:rgba(236,72,153,0.08); padding:2rem; border-radius:16px; text-align:left;
+  box-shadow:0 4px 24px rgba(236,72,153,0.15); transition:all 0.3s; }
+.education-card:hover { transform:translateY(-4px); box-shadow:0 8px 32px rgba(236,72,153,0.25); }
+.education-card h3 { font-size:1.3rem; margin-bottom:0.5rem; color:#ec4899; }
+.education-card .institution { font-size:0.95rem; color:#a855f7; display:block; margin-bottom:0.3rem; }
+.education-card .year { font-size:0.85rem; color:#9d8cb0; }

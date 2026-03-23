@@ -1,0 +1,9 @@
+.about { min-height:80vh; padding:6rem 2rem; text-align:center; background:#0d0a14; color:#c4b3d8; }
+.about h2 { font-family:'Playfair Display', serif; font-size:2.5rem; margin-bottom:2rem; color:#f472b6; }
+.about p { max-width:650px; margin:0 auto 3rem; line-height:1.75; font-size:1rem; }
+.about-cards { display:flex; justify-content:center; flex-wrap:wrap; gap:2rem; }
+.card { background:rgba(168,85,247,0.08); padding:2rem; border-radius:16px; flex:1 1 220px; max-width:280px;
+  box-shadow:0 4px 24px rgba(168,85,247,0.12); transition:all 0.3s; }
+.card:hover { transform:translateY(-4px); box-shadow:0 8px 32px rgba(168,85,247,0.25); }
+.card h3 { font-size:1.2rem; margin-bottom:0.8rem; color:#ec4899; }
+.card p { font-size:0.9rem; color:#9d8cb0; }

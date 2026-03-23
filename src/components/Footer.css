@@ -1,0 +1,28 @@
+.footer {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--ff-m);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  line-height: 2;
+  background: var(--bg);
+}
+
+.footer span {
+  background: linear-gradient(90deg, var(--purple), var(--pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer a {
+  color: var(--pink2);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer a:hover {
+  color: var(--purple2);
+  text-decoration: underline;
+}

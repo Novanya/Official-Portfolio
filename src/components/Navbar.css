@@ -1,0 +1,55 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(1.5rem, 4vw, 3.5rem);
+  background: rgba(13, 10, 20, 0.8);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(168,85,247,0.18);
+}
+.nav-logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-style: italic;
+  background: linear-gradient(120deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-items { display: flex; gap: 0.25rem; }
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.72rem;
+  color: #9d8cb0;
+  padding: 0.45rem 0.85rem;
+  border-radius: 6px;
+  transition: all 0.2s;
+  letter-spacing: 0.3px;
+}
+.nav-btn:hover { color: #7c3aed; background: rgba(168,85,247,0.08); }
+.nav-btn.active { color: #f472b6; background: rgba(236,72,153,0.1); }
+.nav-cta {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.72rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 99px;
+  background: linear-gradient(135deg, #7c3aed, #f472b6);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(236,72,153,0.3);
+  transition: all 0.3s;
+}
+.nav-cta:hover {
+  box-shadow: 0 0 32px rgba(236,72,153,0.55);
+  transform: scale(1.04);
+}
