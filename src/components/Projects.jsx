@@ -9,11 +9,11 @@ export default function Projects() {
       tags: ["React", "Vite", "JavaScript", "HTML", "CSS"],
       link: "https://real-estate-phi-dun.vercel.app/",
     },
-    {
-      name: "User Management System",
+   {
+      name: "Cyber Shield",
       desc: "Built full CRUD system with authentication using Next.js, React, Python, MongoDB, Express.js, and Bcrypt.",
       tags: ["Next.js", "React", "Python", "MongoDB", "Express.js", "Bcrypt"],
-      link: "#",
+      link: "https://novanya.github.io/Cyber-Security-Site/",
     },
   ];
 
