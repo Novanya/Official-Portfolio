@@ -3,17 +3,17 @@ import "./Projects.css";
 
 export default function Projects() {
   const projects = [
-    {
-      name: "Real Estate Selling Site",
-      desc: "Developed a responsive real estate platform allowing users to view and search properties with React, Vite, and JavaScript.",
-      tags: ["React", "Vite", "JavaScript", "HTML", "CSS"],
-      link: "https://real-estate-phi-dun.vercel.app/",
-    },
    {
       name: "Cyber Shield",
       desc: "Built full CRUD system with authentication using Next.js, React, Python, MongoDB, Express.js, and Bcrypt.",
       tags: ["Next.js", "React", "Python", "MongoDB", "Express.js", "Bcrypt"],
       link: "https://novanya.github.io/Cyber-Security-Site/",
+    },
+     {
+      name: "Real Estate Selling Site",
+      desc: "Developed a responsive real estate platform allowing users to view and search properties with React, Vite, and JavaScript.",
+      tags: ["React", "Vite", "JavaScript", "HTML", "CSS"],
+      link: "https://real-estate-phi-dun.vercel.app/",
     },
   ];
 
