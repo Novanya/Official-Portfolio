@@ -11,7 +11,7 @@ export default function Footer() {
       <p>
         Connect with me on{" "}
         <a
-          href="https://github.com/novanya-mendis"
+          href="https://github.com/Novanya"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -19,7 +19,7 @@ export default function Footer() {
         </a>{" "}
         |{" "}
         <a
-          href="https://www.linkedin.com/in/novanya-mendis"
+          href="https://www.linkedin.com/in/novanya-mendis-aa589231a/"
           target="_blank"
           rel="noopener noreferrer"
         >
