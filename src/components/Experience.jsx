@@ -17,6 +17,20 @@ export default function Experience() {
         "Vite",
       ],
     },
+     {
+      period: "",
+      role: "Full Stack Developer Intern",
+      org: "Codveda",
+      desc: "Has expereince on Full Stack Development with completion of an internship under Codveda in 2026 with enhancing the skills such as MongoDB, MYSQL, Java Script, Python, HTML and CSS. React and Tailwind frameworks has also included. ",
+      badges: [
+        "React.js",
+        "MYSQL",
+        "Node.js",
+        "API",
+        "MongoDB",
+        "Tailwind css",
+      ],
+    },
   ];
 
   return (
