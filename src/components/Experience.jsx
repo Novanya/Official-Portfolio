@@ -4,7 +4,7 @@ import "./Experience.css";
 export default function Experience() {
   const experiences = [
     {
-      period: "Nov 2026 - Present",
+      period: "Nov 2025 - Mar 2026",
       role: "Web Development Intern",
       org: "INXCODE",
       desc: "Completed a hands-on internship focusing on modern web development using React.js, Node.js, Express.js, and WordPress. Built multiple small projects showcasing front-end and backend integration.",
@@ -18,7 +18,7 @@ export default function Experience() {
       ],
     },
      {
-      period: "",
+      period: "Mar 2026 - Apr 2026",
       role: "Full Stack Developer Intern",
       org: "Codveda",
       desc: "Has expereince on Full Stack Development with completion of an internship under Codveda in 2026 with enhancing the skills such as MongoDB, MYSQL, Java Script, Python, HTML and CSS. React and Tailwind frameworks has also included. ",
