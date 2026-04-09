@@ -8,7 +8,7 @@ export default function Projects() {
       desc: "Built full CRUD system with authentication using Next.js, React, Python, MongoDB, Express.js, and Bcrypt.",
       tags: ["Next.js", "React", "Python", "MongoDB", "Express.js", "Bcrypt"],
       // link: "https://novanya.github.io/Cyber-Security-Site/",
-     link:"https://vercel.com/novanyas-projects/cyber-security-site/ACmMjHPeHZhTqcteSYQCTUPycrdv",
+     link:"https://cyber-security-site-jhzkhuuz2-novanyas-projects.vercel.app/",
     },
      {
       name: "Real Estate Selling Site",
