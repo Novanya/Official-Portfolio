@@ -4,7 +4,8 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <nav className="nav">
-      <div className="nav-logo">Novanya Mendis</div>
+      <a href="#home">
+      <div className="nav-logo">Novanya Mendis</div></a>
       <div className="nav-items">
         <a href="#home">
           <button className="nav-btn">Home</button>
