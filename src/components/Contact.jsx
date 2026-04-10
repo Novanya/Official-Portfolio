@@ -42,7 +42,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit} action="https://formspree.io/f/xreowkal" method="post">
           <div className="f-row">
             <div className="f-group">
               <label className="f-label">Name</label>
