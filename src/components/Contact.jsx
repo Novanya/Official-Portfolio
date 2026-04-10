@@ -17,8 +17,12 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Your form submission logic here
     setSent(true);
+    if(setSent == true){
+      alert("Message Sent!")
+    } else{
+      alert("Oops! Message not send...")
+    }
   };
 
   return (
