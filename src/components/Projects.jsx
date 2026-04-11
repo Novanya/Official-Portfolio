@@ -7,8 +7,13 @@ export default function Projects() {
       name: "Cyber Shield",
       desc: "Built full CRUD system with authentication using Next.js, React, Python, MongoDB, Express.js, and Bcrypt.",
       tags: ["Next.js", "React", "Python", "MongoDB", "Express.js", "Bcrypt"],
-      // link: "https://novanya.github.io/Cyber-Security-Site/",
      link:"https://cyber-security-site-jhzkhuuz2-novanyas-projects.vercel.app/",
+    },
+     {
+      name: "Ava Chen's Portfolio",
+      desc: "Developed an interactive portfolio site using plain frontend with HTML, CSS and JavaScript.",
+      tags: ["HTML, CSS, JavaScript"],
+      link: "https://novanya.github.io/Ava-Chen-Portfolio/",
     },
      {
       name: "Real Estate Selling Site",
