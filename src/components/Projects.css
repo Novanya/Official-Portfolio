@@ -33,27 +33,88 @@
   background: linear-gradient(90deg, var(--purple), var(--pink), transparent);
 }
 
+/* GRID */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 1.8rem;
 }
 
+/* =========================
+   PROJECT CARD (MAIN FIXED)
+========================= */
+
 .proj-card {
   background: var(--bg2);
   border: 1px solid var(--border);
   border-radius: 20px;
   overflow: hidden;
-  transition: all 0.35s;
-  cursor: pointer;
   position: relative;
+  display: block;
+
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
-.proj-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(168,85,247,0.45);
-  box-shadow: 0 24px 60px rgba(124,58,237,0.15);
+/* remove browser link styles completely */
+.proj-card:link,
+.proj-card:visited,
+.proj-card:active {
+  text-decoration: none;
+  color: inherit;
 }
+
+/* safety: keep text always same color */
+.proj-card * {
+  color: inherit;
+}
+
+/* =========================
+   GLOW EFFECT
+========================= */
+
+.proj-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(168, 85, 247, 0.25),
+    rgba(236, 72, 153, 0.15),
+    transparent 70%
+  );
+
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* lift + glow */
+.proj-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 25px 70px rgba(168, 85, 247, 0.25);
+  border-color: rgba(168, 85, 247, 0.6);
+}
+
+.proj-card:hover::before {
+  opacity: 1;
+}
+
+/* content stays above glow */
+.proj-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   COVER
+========================= */
 
 .proj-cover {
   height: 185px;
@@ -69,21 +130,29 @@
   color: var(--purple2);
 }
 
+/* =========================
+   OVERLAY
+========================= */
+
 .proj-overlay {
   position: absolute;
   inset: 0;
   background: rgba(13,10,20,0.65);
   opacity: 0;
   transition: opacity 0.3s;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
 }
 
 .proj-card:hover .proj-overlay {
   opacity: 1;
 }
+
+/* =========================
+   BUTTON
+========================= */
 
 .proj-btn {
   font-family: var(--ff-m);
@@ -91,9 +160,11 @@
   letter-spacing: 1px;
   padding: 0.5rem 1.1rem;
   border-radius: 99px;
+
   background: rgba(168,85,247,0.2);
   border: 1px solid rgba(168,85,247,0.5);
   color: var(--purple2);
+
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -102,6 +173,10 @@
   background: var(--purple2);
   color: #fff;
 }
+
+/* =========================
+   BODY
+========================= */
 
 .proj-body {
   padding: 1.4rem 1.5rem;
