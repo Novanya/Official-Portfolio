@@ -3,19 +3,19 @@ import "./Projects.css";
 
 export default function Projects() {
   const projects = [
-   {
+    {
       name: "Cyber Shield",
       desc: "Built full CRUD system with authentication using Next.js, React, Python, MongoDB, Express.js, and Bcrypt.",
       tags: ["Next.js", "React", "Python", "MongoDB", "Express.js", "Bcrypt"],
-     link:"https://cyber-security-site-jhzkhuuz2-novanyas-projects.vercel.app/",
+      link: "https://cyber-security-site-jhzkhuuz2-novanyas-projects.vercel.app/",
     },
-     {
+    {
       name: "Ava Chen's Portfolio",
       desc: "Developed an interactive portfolio site using plain frontend with HTML, CSS and JavaScript.",
-      tags: ["HTML, CSS, JavaScript"],
+      tags: ["HTML", "CSS", "JavaScript"],
       link: "https://novanya.github.io/Ava-Chen-Portfolio/",
     },
-     {
+    {
       name: "Real Estate Selling Site",
       desc: "Developed a responsive real estate platform allowing users to view and search properties with React, Vite, and JavaScript.",
       tags: ["React", "Vite", "JavaScript", "HTML", "CSS"],
@@ -27,17 +27,22 @@ export default function Projects() {
     <section className="projects-bg wrap" id="projects">
       <div className="s-label">Work</div>
       <h2 className="s-title">My Projects</h2>
+
       <div className="projects-grid">
         {projects.map((proj, idx) => (
-          <div
-            className="proj-card"
+          <a
             key={idx}
-            onClick={() => window.open(proj.link, "_blank")}
+            className="proj-card"
+            href={proj.link}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="proj-cover">{proj.name[0]}</div>
+
             <div className="proj-overlay">
               <button className="proj-btn">View Project</button>
             </div>
+
             <div className="proj-body">
               <div className="proj-tags">
                 {proj.tags.map((tag, i) => (
@@ -46,10 +51,11 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
+
               <div className="proj-name">{proj.name}</div>
               <div className="proj-desc">{proj.desc}</div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </section>
