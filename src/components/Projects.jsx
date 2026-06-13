@@ -11,13 +11,13 @@ export default function Projects() {
     },
     {
       name: "Ava Chen's Portfolio",
-      desc: "Developed an interactive portfolio site using plain frontend with HTML, CSS and JavaScript.",
+      desc: "Developed an interactive portfolio site using HTML, CSS and JavaScript.",
       tags: ["HTML", "CSS", "JavaScript"],
       link: "https://novanya.github.io/Ava-Chen-Portfolio/",
     },
     {
       name: "Real Estate Selling Site",
-      desc: "Developed a responsive real estate platform allowing users to view and search properties with React, Vite, and JavaScript.",
+      desc: "Responsive real estate platform built with React, Vite.",
       tags: ["React", "Vite", "JavaScript", "HTML", "CSS"],
       link: "https://real-estate-phi-dun.vercel.app/",
     },
@@ -32,15 +32,15 @@ export default function Projects() {
         {projects.map((proj, idx) => (
           <a
             key={idx}
-            className="proj-card"
             href={proj.link}
             target="_blank"
             rel="noopener noreferrer"
+            className="proj-card"
           >
             <div className="proj-cover">{proj.name[0]}</div>
 
             <div className="proj-overlay">
-              <button className="proj-btn">View Project</button>
+              <span className="proj-btn">View Project</span>
             </div>
 
             <div className="proj-body">
