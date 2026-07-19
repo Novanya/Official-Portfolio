@@ -21,7 +21,7 @@ export default function Experience() {
       period: "Mar 2026 - Apr 2026",
       role: "Full Stack Developer Intern",
       org: "DecodeLabs",
-      desc: "Has expereince on Full Stack Development with completion of an internship under Codveda in 2026 with enhancing the skills such as MongoDB, MYSQL, Java Script, Python, HTML and CSS. React and Tailwind frameworks has also included. ",
+      desc: "Has expereince on Full Stack Development with completion of an internship under DecodeLabs in 2026 with enhancing the skills such as MongoDB, MYSQL, Java Script, Python, HTML and CSS. React and Tailwind frameworks has also included. ",
       badges: [
         "React.js",
         "MYSQL",
