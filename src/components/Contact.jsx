@@ -9,19 +9,34 @@ export default function Contact() {
     subject: "",
     msg: "",
   });
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState("idle"); // idle | sending | sent | error
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSent(true);
-    if(setSent == true){
-      alert("Message Sent!")
-    } else{
-      alert("Oops! Message not send...")
+    setStatus("sending");
+
+    try {
+      const res = await fetch("https://formspree.io/f/xreowkal", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(form),
+      });
+
+      if (res.ok) {
+        setStatus("sent");
+        setForm({ name: "", email: "", subject: "", msg: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
     }
   };
 
@@ -92,11 +107,24 @@ export default function Contact() {
               placeholder="Your Message"
             />
           </div>
-          <a href="mailto:novamendis@gmail.com">
-            <button type="submit" className="btn-glow">
-              Send Message {/* {sent ? "Sent!" : "Send Message"} */}
-            </button>
-          </a>
+          <button type="submit" className="btn-glow" disabled={status === "sending"}>
+            {status === "sending"
+              ? "Sending..."
+              : status === "sent"
+              ? "Message Sent!"
+              : "Send Message"}
+          </button>
+          {status === "sent" && (
+            <p className="f-status f-status-success">
+              Thanks! Your message has been sent — I'll get back to you soon.
+            </p>
+          )}
+          {status === "error" && (
+            <p className="f-status f-status-error">
+              Something went wrong. Please try again, or email me directly at{" "}
+              <a href="mailto:novamendis@gmail.com">novamendis@gmail.com</a>.
+            </p>
+          )}
 
           <div className="social-row">
             <div className="social-row">
