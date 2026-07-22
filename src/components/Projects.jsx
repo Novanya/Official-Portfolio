@@ -10,6 +10,18 @@ export default function Projects() {
       tags: ["Next.js", "React", "Python", "MongoDB", "Express.js", "Bcrypt"],
       link: "https://cyber-security-site-jhzkhuuz2-novanyas-projects.vercel.app/",
       },
+        {
+      name: "TomatoBite",
+      desc: "WordPress landing page built for a restaurant called TomatoBite hosted with InfinityFree",
+      tags: ["WordPress", "LocalWP", "InfinityFree", "CMS"],
+      link: "https://tomatobite.free.nf/",
+      },
+    {
+      name: "Ava Chen's Portfolio",
+      desc: "Developed an interactive portfolio site using HTML, CSS and JavaScript.",
+      tags: ["HTML", "CSS", "JavaScript"],
+      link: "https://novanya.github.io/Ava-Chen-Portfolio/",
+    },
       {
       name: "Positivus Landing Page",
       desc: "Built a landing page using WordPress and Hosted using Infinityfree hosting platfoam.",
@@ -21,12 +33,6 @@ export default function Projects() {
       desc: "Built frontend of a salon called salon kech using HTML,CSS and JavaScript.",
      tags: ["HTML", "CSS", "JavaScript"],
       link: "https://novanya.github.io/Salon-kech/",
-    },
-    {
-      name: "Ava Chen's Portfolio",
-      desc: "Developed an interactive portfolio site using HTML, CSS and JavaScript.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      link: "https://novanya.github.io/Ava-Chen-Portfolio/",
     },
     {
       name: "Real Estate Selling Site",
